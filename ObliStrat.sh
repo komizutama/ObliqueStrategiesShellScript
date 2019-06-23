@@ -1,6 +1,5 @@
 #!/bin/bash
-# My first script
-
+# My first shell script- Brian Eno's Oblique strategies randomly served. This will help so much. 
 
 strategies=(
   "Remove specifics and convert to ambiguities"
@@ -10,7 +9,6 @@ strategies=(
   "What is the reality of the situation?"
   "Simple subtraction"
   "Are there sections?  Consider transitions"
-  "Remove specifics and convert to ambiguities"
   "Turn it upside down"
   "Go slowly all the way round the outside"
   "A line has two sides"
@@ -103,7 +101,7 @@ strategies=(
   "Imagine the music as a set of disconnected events"
   "Change nothing and continue with immaculate consistency"
   "Imagine the piece as a set of disconnected events"
-  "What are you really thinking about just now?Incorporate."
+  "What are you really thinking about just now? Incorporate."
   "Children's voices: speaking, singing"
   "Assemble some of the instruments in a group and treat the group"
   "Feedback recordings into an acoustic situation"
@@ -140,7 +138,4 @@ strategies=(
   "Be less critical more often"
 )
 
-length=${#strategies[@]}
-
-
-echo "strategies[$(RANDOM % length)]"
+ echo ${strategies[$(( ( RANDOM % ${#strategies[@]} ) ))]}
